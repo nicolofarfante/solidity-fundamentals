@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BasicWalletExample.sol": "BasicWalletExam"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BasicWalletExample.sol": {
+			"keccak256": "0xea9d2225217ea313579cb25acee914cb5309a2a98ccfc7ccb856b6f665977644",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://626dc12e6830ce8b04813f646a3ab397efe7308abc958d70e8f0e00d88fe7a06",
+				"dweb:/ipfs/QmU4T4JCGnmdeEEgRJgRjTxMCdSnfWnkB4zrvD2wZ8935D"
+			]
+		}
+	},
+	"version": 1
+}

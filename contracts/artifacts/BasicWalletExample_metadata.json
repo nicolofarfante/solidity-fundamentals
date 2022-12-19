@@ -1,0 +1,86 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdrawAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_otherAddress",
+						"type": "address"
+					}
+				],
+				"name": "withdrawTo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BasicWalletExample.sol": "BasicWalletExample"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BasicWalletExample.sol": {
+			"keccak256": "0x2be1d650a20ce580531a68c57fa485e4270aaebc27a858769879f59bbda22196",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://6f6bb2f8c9c760f9beb8d561732c92f48eb3982d41e90c4f9cf13e1f155198c6",
+				"dweb:/ipfs/QmSqbeoHN661HssQP8JCuLrqrMcB7yAj9RWa9GMT42nNab"
+			]
+		}
+	},
+	"version": 1
+}
