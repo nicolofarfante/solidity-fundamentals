@@ -27,7 +27,7 @@
 				],
 				"name": "withdrawMoney",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -59,11 +59,11 @@
 	},
 	"sources": {
 		"contracts/ExampleMappingStruct.sol": {
-			"keccak256": "0xa34f133b099b554f406af4d3faf3228bc98cd833ff9068efea4dff8d392ac070",
+			"keccak256": "0x9f729ab06310040089430688dda8e0b9a728e63191964402f525d9953e2ec6a2",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://6a8b5ace421f0418d51a73f1e4ae6c61803ac02baef7a9d50d28112d318741f2",
-				"dweb:/ipfs/QmcGZvXCEQdZgY45THBj6g6omNc5YerSQXgvZQxtkZWdsa"
+				"bzz-raw://0d3b3190ce6587b696965edeb43c8ef7c96c6d3873df45d8b4e87452ab2e26c8",
+				"dweb:/ipfs/Qmcpzh1EEspU69563MsecJzReTxmtfkTSbti1D2j63xZ8X"
 			]
 		}
 	},
