@@ -6,10 +6,75 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "totalBalance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numOfDeposits",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numOfWithdrawals",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "depositMoney",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numOfDeposit",
+						"type": "uint256"
+					}
+				],
+				"name": "getDepositNum",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct MappingStructExample.Transaction",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -59,11 +124,11 @@
 	},
 	"sources": {
 		"contracts/ExampleMappingStruct.sol": {
-			"keccak256": "0x9f729ab06310040089430688dda8e0b9a728e63191964402f525d9953e2ec6a2",
+			"keccak256": "0x41691a5413ba87e1be004181432567cbafd010deb399ffe2adb70d0c9e1eab45",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://0d3b3190ce6587b696965edeb43c8ef7c96c6d3873df45d8b4e87452ab2e26c8",
-				"dweb:/ipfs/Qmcpzh1EEspU69563MsecJzReTxmtfkTSbti1D2j63xZ8X"
+				"bzz-raw://5628424d424ce26c75df674919787589d449858f3233fe129dcb30b21a080ce5",
+				"dweb:/ipfs/QmeUU2fHjjMxciBc9EytgvzYRpMnYBQepCdG7EZBtJWUC6"
 			]
 		}
 	},

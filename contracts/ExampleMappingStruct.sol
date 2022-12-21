@@ -28,7 +28,12 @@ contract MappingStructExample {
     }
 
     //mappo ogni address con un oggetto Balance che recupero dallo struct
-    mapping(address => Balance) balances;
+    mapping(address => Balance) public balances;
+
+    //se voglio vedere i dati di un deposito specifico
+    function getDepositNum(address _from, uint _numOfDeposit) public view returns(Transaction memory) {
+        return balances[_from].deposits[_numOfDeposit - 1];
+    }
 
     function depositMoney() public payable {
         //accedo al totalBalance di un singolo address contenuto nel mapping "balances"
@@ -56,9 +61,11 @@ contract MappingStructExample {
 
     function withdrawMoney(address payable _to, uint _amount) public payable {
         
-        balances[msg.sender].totalBalance -= msg.value;
-
-
+        balances[msg.sender].totalBalance -= _amount;
+        Transaction memory withdrawal = Transaction(_amount, block.timestamp);
+        balances[msg.sender].withdrawals[balances[msg.sender].numOfWithdrawals] = withdrawal;
+        balances[msg.sender].numOfWithdrawals;
+        _to.transfer(_amount);
 
     }
 }
