@@ -6,22 +6,21 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "balance",
+				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
-				"name": "NotAllowedError",
-				"type": "error"
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "aFunction",
-				"outputs": [],
-				"stateMutability": "pure",
-				"type": "function"
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -37,7 +36,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ExampleTryCatch.sol": "WillThrow"
+			"contracts/ExampleSendTransfer.sol": "ReceiverNoAction"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -51,12 +50,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ExampleTryCatch.sol": {
-			"keccak256": "0x69466a9f587c47f9fa9bf8cbcaf286719a64cdcd60568f4b114a3cce7218927f",
+		"contracts/ExampleSendTransfer.sol": {
+			"keccak256": "0xf2cf0e823974bb53d29ddf723c3f78c3e454d74e360a44a67bbd51d56ad60c3c",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://a50b21b7b795cf64ba123784c75d09474acf09f359253b9faf112ffae008fef1",
-				"dweb:/ipfs/QmdaGNsUFH1NUYsprR4Qkpk22QEVPZD1QZP4yoSTMGLPpr"
+				"bzz-raw://d26a77e8f9b04e927411c198def6246e8a45fa45e7d02a65d8661c619ad5d4ad",
+				"dweb:/ipfs/QmdPyegjNUQSo57vEDR12fFruNmVsLECFJjB37SBmgW32K"
 			]
 		}
 	},

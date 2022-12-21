@@ -1,12 +1,15 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity >=0.7.0 <0.9.0;
+pragma solidity 0.8.15;
 
 contract WillThrow {
 
+    error NotAllowedError(string);
+
     function aFunction() public pure {
         // require(false, "Error message");
-        assert(false);
+        //assert(false);
+        revert NotAllowedError("You are not allowed");
     }
 
 }
@@ -16,6 +19,7 @@ contract ErrorHandling {
 
     event ErrorLogging(string reason);
     event ErrorLogCode(uint code);
+    event ErrorLogBytes(bytes lowLevelData);
 
     function catchTheError() public {
 
@@ -32,6 +36,10 @@ contract ErrorHandling {
         catch Panic(uint errorCode) {
             //catch per l'assert()
             emit ErrorLogCode(errorCode);
+        }
+        catch(bytes memory lowLevelData) {
+            //catch per errori custom
+            emit ErrorLogBytes(lowLevelData);
         }
     }
 }
