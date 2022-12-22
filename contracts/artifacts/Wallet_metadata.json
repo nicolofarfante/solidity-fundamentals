@@ -81,6 +81,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address payable",
@@ -173,11 +186,11 @@
 	},
 	"sources": {
 		"contracts/ProjectWorkWallet.sol": {
-			"keccak256": "0xfc743824180d769de6c3b01f928537fd9a44146d800f5f1a58f80578754554e0",
+			"keccak256": "0x04c1d681e7a6b4a086b6a191afdd8a2fde851f286dc9015ae0c7165dff72b3ff",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://232a5d73f122dd8c505de2f64cae518d83da66137bb6d4fede6f5d80fad70d48",
-				"dweb:/ipfs/QmPEwGefjfvnn23LjfJSnZPvPy8vvkYPDwDU3qwGKZECqx"
+				"bzz-raw://6c6e2bb0d4b203bb285717f7a234535f86ac8796382c0f09178fbf08ed142e88",
+				"dweb:/ipfs/QmTVLwB3ER7cWdmwh3vxSaneAY6nei95Gfxc4mdXmRHKEG"
 			]
 		}
 	},

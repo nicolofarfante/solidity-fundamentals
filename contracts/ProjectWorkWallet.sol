@@ -4,7 +4,7 @@ pragma solidity 0.8.15;
 
 contract Wallet {
 
-    address payable owner;
+    address payable public owner;
     mapping(address => uint) public balanceReceived;
     mapping(address => bool) public allowance;
     mapping(address => bool) public guardians;
