@@ -23,7 +23,7 @@ contract Wallet {
 
     function setAllowance(address _for, uint _amount) public {
         require(msg.sender == owner, "This functionality is only for the owner!");
-        balanceReceived[msg.sender] = _amount;
+        balanceReceived[_for] = _amount;
 
         if(_amount > 0) {
             allowance[_for] = true;

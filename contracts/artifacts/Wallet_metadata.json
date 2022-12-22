@@ -186,11 +186,11 @@
 	},
 	"sources": {
 		"contracts/ProjectWorkWallet.sol": {
-			"keccak256": "0x04c1d681e7a6b4a086b6a191afdd8a2fde851f286dc9015ae0c7165dff72b3ff",
+			"keccak256": "0x7bf7dbf483ed00a28e4710fca0060df5837a6beaf62e98cdbb9796506196d771",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6c6e2bb0d4b203bb285717f7a234535f86ac8796382c0f09178fbf08ed142e88",
-				"dweb:/ipfs/QmTVLwB3ER7cWdmwh3vxSaneAY6nei95Gfxc4mdXmRHKEG"
+				"bzz-raw://0b658248377175e7147f3353c71481557bcdeffadaa9ef3ad6840f9ea7c1b660",
+				"dweb:/ipfs/QmXEPHRWDXEj9geZaToUEp5Ez2hAuBSZpCjTbLFWJ8cqoK"
 			]
 		}
 	},
