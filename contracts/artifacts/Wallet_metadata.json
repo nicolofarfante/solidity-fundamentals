@@ -1,29 +1,148 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.15+commit.e14f2714"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
 				"inputs": [],
-				"name": "payContract",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
+				"stateMutability": "nonpayable",
+				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "payment",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "contract PaymentReceived",
+						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
 				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balanceReceived",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "confirmationsFromGuardiansForReset",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "guardians",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "proposeNewOwer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_for",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "setAllowance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "payload",
+						"type": "bytes"
+					}
+				],
+				"name": "spendMoney",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -39,7 +158,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ExampleStruct.sol": "Wallet"
+			"contracts/ProjectWorkWallet.sol": "Wallet"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -53,12 +172,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ExampleStruct.sol": {
-			"keccak256": "0xe73d094fe0809fd36473e7be670ea2eaf8eda8bba92f878b425fe73b38561828",
-			"license": "GPL-3.0",
+		"contracts/ProjectWorkWallet.sol": {
+			"keccak256": "0xfc743824180d769de6c3b01f928537fd9a44146d800f5f1a58f80578754554e0",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://86a05252a7039eb89d51c09b65f63716bc0e4ec9fef77ec2bf51e6b5cac5f67b",
-				"dweb:/ipfs/QmP7qEzUDUoYMf3Edn6UuZiP7VsPWczxHaj9tsa45eJEoB"
+				"bzz-raw://232a5d73f122dd8c505de2f64cae518d83da66137bb6d4fede6f5d80fad70d48",
+				"dweb:/ipfs/QmPEwGefjfvnn23LjfJSnZPvPy8vvkYPDwDU3qwGKZECqx"
 			]
 		}
 	},
