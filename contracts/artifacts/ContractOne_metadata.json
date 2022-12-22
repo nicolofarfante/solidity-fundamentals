@@ -6,8 +6,14 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "balance",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "addressBalances",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -20,20 +26,10 @@
 			},
 			{
 				"inputs": [],
-				"name": "balanceReceived",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
+				"name": "deposit",
+				"outputs": [],
 				"stateMutability": "payable",
-				"type": "receive"
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -49,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ExampleSendTransfer.sol": "ReceiverAction"
+			"contracts/ExampleContractCall.sol": "ContractOne"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -63,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ExampleSendTransfer.sol": {
-			"keccak256": "0xa1485dce5a5dea3ebadbd33290e378220ba3cba40dce8b0bb550306803364d73",
-			"license": "GPL-3.0",
+		"contracts/ExampleContractCall.sol": {
+			"keccak256": "0xb9391992bdc957c07bedea89537f9bdda240ac847ac5858a0a87f1c992c9c54e",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://120ad7f468b525b508dec4ad9034c7b6757577c60b97516145dc8bd31381889b",
-				"dweb:/ipfs/Qme9J5attffj5fyX6jvPm86Srv9Nuzi3LZEtgadG8Pq2c8"
+				"bzz-raw://83ec7480168d0e8ec54bff6379ab6bde5d49b3cdc31b424b0feab6bf41c8ffe2",
+				"dweb:/ipfs/QmZkCqXC5hnH8AURjNQyk1MirLinWe7g6RjvGNgb1XHMe8"
 			]
 		}
 	},

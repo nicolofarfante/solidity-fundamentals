@@ -51,11 +51,11 @@
 	},
 	"sources": {
 		"contracts/ExampleSendTransfer.sol": {
-			"keccak256": "0xf2cf0e823974bb53d29ddf723c3f78c3e454d74e360a44a67bbd51d56ad60c3c",
+			"keccak256": "0xa1485dce5a5dea3ebadbd33290e378220ba3cba40dce8b0bb550306803364d73",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://d26a77e8f9b04e927411c198def6246e8a45fa45e7d02a65d8661c619ad5d4ad",
-				"dweb:/ipfs/QmdPyegjNUQSo57vEDR12fFruNmVsLECFJjB37SBmgW32K"
+				"bzz-raw://120ad7f468b525b508dec4ad9034c7b6757577c60b97516145dc8bd31381889b",
+				"dweb:/ipfs/Qme9J5attffj5fyX6jvPm86Srv9Nuzi3LZEtgadG8Pq2c8"
 			]
 		}
 	},

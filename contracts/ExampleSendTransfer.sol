@@ -10,7 +10,10 @@ contract Sender {
     }
 
     function withdrawSend(address payable _to) public {
-        _to.send(10);
+        bool isSent = _to.send(10);
+
+        //se isSent è false, quindi se il send() non è andato a buon fine, lancerà errore
+        require(isSent, "Sending the funds was unsuccessful");
     }
 }
 
@@ -33,6 +36,11 @@ contract ReceiverAction {
 
     uint public balanceReceived;
 
+    //questa volta receive() fa l'update del balance, interrompendo l'esecuzione per scrivere su una storage variable
+    //operazione costosa, specialmente la prima volta
+
+    //in questo esempio, il trasferimento di fondi fallirà in quanto lo scrivere sulla variabile 
+    // consumerà tutto il gas fornito
     receive() external payable {
         balanceReceived += msg.value;
     }
