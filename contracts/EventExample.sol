@@ -5,7 +5,7 @@ contract EventExample {
 
     mapping(address => uint) public tokenBalance;
 
-    //i campi input hanno la keyword "indexed" la quale li indicizza e permette così, una volta su un un client che sta
+    //i campi input hanno la keyword "indexed" la quale li indicizza e permette così, una volta su un client che sta
     //  leggendo eventi emessi, di filtrare non solo per eventi, ma anche per i loro specifici campi
     //  es. voglio vedere tutti gli eventi emessi che si chiamano "TokensSent" e che 
     //      hanno uno specifico valore nel campo _from

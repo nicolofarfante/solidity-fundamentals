@@ -11,29 +11,25 @@
 				"type": "constructor"
 			},
 			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "_from",
-						"type": "address"
-					},
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "_to",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "TokensSent",
-				"type": "event"
+				"inputs": [],
+				"name": "burnToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "createNewToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "purchaseToken",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
 			},
 			{
 				"inputs": [
@@ -49,13 +45,7 @@
 					}
 				],
 				"name": "sendToken",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -92,7 +82,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/EventExample.sol": "EventExample"
+			"contracts/InheritanceModifierExample.sol": "InheritanceModifierExample"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -106,12 +96,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/EventExample.sol": {
-			"keccak256": "0x53b2d7293958e3bfcede47780312164a28063618587cecc4551e16920d90f5b0",
+		"contracts/InheritanceModifierExample.sol": {
+			"keccak256": "0x41ed439be063dd13286edf87b77674bc240d11caf35d4f3f54bb97d94ca8e5ae",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bbb763a58ce4064cd7f8080dfd2f1ff0751c210decd6a575227d1c41205c52ae",
-				"dweb:/ipfs/QmbsgHvSzQCnEDEaqjSVf92BLfUPmkaoMQbXBHs26kEb8U"
+				"bzz-raw://9ae04c870f7b29b27bd23e2a1179b8320b68d039b2b1f7688b82b2d3d8f9687c",
+				"dweb:/ipfs/QmZ7hU3t63gNJicrLkX5e1Mdhzy5fX9fhvcPMttZ7VvLUn"
+			]
+		},
+		"contracts/Ownable.sol": {
+			"keccak256": "0x5bbf6fa86cee1ba68627013fbe48e055c7dfc57cc48ab1872e27f41d161fb281",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1a6a1b43dde184c0b28e187008d36654d8ce17c4cef7121dc4f2e4284188a9ee",
+				"dweb:/ipfs/QmT6i5GroCb8fNMwLEJSFpGGtjUmEe612N6bNrtRbUKpmC"
 			]
 		}
 	},
