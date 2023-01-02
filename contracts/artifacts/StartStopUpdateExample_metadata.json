@@ -30,7 +30,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/StartStopUpdateExample.sol": "StartStopUpdateExample"
+			"contracts/SampleSelfdestruct.sol": "StartStopUpdateExample"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -44,12 +44,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/StartStopUpdateExample.sol": {
-			"keccak256": "0x887fc84d892de8e774e90e70f8a77a03529143262104605aa92130a9dfd276c2",
+		"contracts/SampleSelfdestruct.sol": {
+			"keccak256": "0xab35efe67eaabba04f4bd2b414f03dda7a26606c21ba697aa4d3d0e58aa18686",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b82556fef786263ba81b551323b10266f1b071432723c78ad9705ed8ecfbea5f",
-				"dweb:/ipfs/QmWUnwPe1sSQqB4qCEUFoBh3spKGMbMR7gYpv1HdsJfW2i"
+				"bzz-raw://29118cd435efbf1c599a7e9ca5fcbb694ed7a4779671922bc3550d1d536cae9b",
+				"dweb:/ipfs/QmeKCXK79AeoXBHsxNCQepYttvY8Xvztu8eWfw7JntTber"
 			]
 		}
 	},

@@ -8,6 +8,8 @@ contract StartStopUpdateExample {
     function destroySmartContract() public {
         //l'argomento del selfdestruct() è l'address (EOA o CA) che riceverà i fondi 
         //  contenuti nello smart contract distrutto
+        //  (NB. NON IMPORTA SE QUESTO HA O MENO UNA RECEIVE/FALLBACK/PAYABLE!
+        //       RICEVERA' I  FONDI IN OGNI CASO)
         selfdestruct(payable(msg.sender));
     }
 }
